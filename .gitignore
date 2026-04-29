@@ -1,0 +1,17 @@
+# Arquivos do Claude Code (preview local)
+.claude/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node modules (caso adicione no futuro)
+node_modules/
