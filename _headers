@@ -4,5 +4,5 @@
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://*.tawk.to https://embed.tawk.to; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.tawk.to; font-src 'self' data: https://fonts.gstatic.com https://*.tawk.to; img-src 'self' data: https: https://*.tawk.to; connect-src 'self' https://*.tawk.to wss://*.tawk.to; frame-src https://*.tawk.to; object-src 'none'; base-uri 'self'; form-action 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://*.tawk.to; script-src-elem 'self' https://*.tawk.to https://*.cloudflareinsights.com https://*.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.tawk.to; style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.tawk.to; font-src 'self' data: https://fonts.gstatic.com https://*.tawk.to; img-src 'self' data: https: blob:; connect-src 'self' https://*.tawk.to wss://*.tawk.to https://*.cloudflareinsights.com; frame-src https://*.tawk.to; media-src https://*.tawk.to; object-src 'none'; base-uri 'self'; form-action 'self'
   X-XSS-Protection: 1; mode=block
