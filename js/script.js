@@ -8,14 +8,18 @@
   /* ------------------------------------------
      Abrir chat do Tawk.to
      ------------------------------------------ */
-  window.openChat = function () {
+  function openChat() {
     if (typeof Tawk_API !== 'undefined' && Tawk_API.maximize) {
       Tawk_API.maximize();
     } else {
-      // Fallback: caso Tawk.to não esteja carregado ainda
       console.log('[Chat] Tawk.to não carregado. Configure o widget.');
     }
-  };
+  }
+
+  // Anexa listener em todos os botões com data-action="open-chat"
+  document.querySelectorAll('[data-action="open-chat"]').forEach(function (btn) {
+    btn.addEventListener('click', openChat);
+  });
 
   /* ------------------------------------------
      Header scroll — adiciona sombra

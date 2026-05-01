@@ -45,7 +45,7 @@
         <a href="#como-funciona" class="header__link">Como funciona</a>
         <a href="#faq" class="header__link">FAQ</a>
       </nav>
-      <button class="btn btn--sm btn--cta header__cta" onclick="openChat()" aria-label="Abrir chat para solicitar empréstimo">
+      <button class="btn btn--sm btn--cta header__cta" data-action="open-chat" aria-label="Abrir chat para solicitar empréstimo">
         Fale Conosco
       </button>
     </div>
@@ -74,7 +74,7 @@
           </p>
 
           <div class="hero__cta-group">
-            <button class="btn btn--lg btn--cta btn--pulse" onclick="openChat()" aria-label="Solicitar empréstimo agora via chat">
+            <button class="btn btn--lg btn--cta btn--pulse" data-action="open-chat" aria-label="Solicitar empréstimo agora via chat">
               QUERO MEU EMPRÉSTIMO AGORA
             </button>
             <p class="hero__cta-sub">
@@ -195,7 +195,7 @@
         </div>
 
         <div class="comparison__cta fade-in">
-          <button class="btn btn--lg btn--cta" onclick="openChat()">QUERO A MELHOR OPÇÃO</button>
+          <button class="btn btn--lg btn--cta" data-action="open-chat">QUERO A MELHOR OPÇÃO</button>
         </div>
       </div>
     </section>
@@ -264,7 +264,7 @@
         </div>
 
         <div class="steps__cta fade-in">
-          <button class="btn btn--lg btn--cta" onclick="openChat()">COMEÇAR AGORA</button>
+          <button class="btn btn--lg btn--cta" data-action="open-chat">COMEÇAR AGORA</button>
         </div>
       </div>
     </section>
@@ -369,7 +369,7 @@
         <h2 class="cta-final__title fade-in">Pronto para receber seu empréstimo?</h2>
         <p class="cta-final__subtitle fade-in">Milhares de motoristas já confiaram em nós. Sua vez agora.</p>
 
-        <button class="btn btn--xl btn--cta btn--pulse fade-in" onclick="openChat()">
+        <button class="btn btn--xl btn--cta btn--pulse fade-in" data-action="open-chat">
           FALAR COM ATENDENTE AGORA
         </button>
 
@@ -424,19 +424,8 @@
   <!-- Scripts -->
   <script src="js/script.js"></script>
 
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/69e11e8162538b1c343eefce/1jmbluanu';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
+  <!-- Tawk.to Widget -->
+  <script src="js/tawk.js" defer></script>
 
 </body>
 </html>
